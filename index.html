@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harold Jake Patindol - Profile</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+/* ===== RESET ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Dark Tech Background */
+    background: radial-gradient(circle at center, #232526, #414345);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+/* ===== PROFILE CARD ===== */
+.profile-card {
+    background: rgba(30, 30, 30, 0.95); /* Dark card */
+    width: 100%;
+    max-width: 400px;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    /* Neon Glow Shadow */
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.15), 0 10px 30px rgba(0,0,0,0.5);
+    overflow: hidden;
+    border: 1px solid #333;
+}
+
+/* ===== DECORATIVE GLOW ===== */
+.profile-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(60deg, transparent, rgba(0, 255, 204, 0.1), transparent);
+    transform: rotate(45deg);
+    animation: shine 6s infinite linear;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes shine {
+    0% { transform: translateY(-100%) rotate(45deg); }
+    100% { transform: translateY(100%) rotate(45deg); }
+}
+
+/* ===== CONTENT WRAPPER ===== */
+.profile-card * {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== PROFILE IMAGE ===== */
+.profile-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* Cyan Border for Tech feel */
+    border: 3px solid #00ffcc;
+    margin-bottom: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
+}
+
+/* ===== TEXT ===== */
+h1 {
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+.title {
+    font-size: 14px;
+    color: #00ffcc; /* Neon Cyan */
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ===== BIO ===== */
+.bio {
+    font-size: 14px;
+    color: #b0b0b0; /* Light Gray */
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* ===== INFO BOX ===== */
+.info {
+    background: #252525;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #ddd;
+    border-left: 3px solid #00ffcc;
+}
+
+.info p {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.info p:last-child {
+    margin-bottom: 0;
+}
+
+.info i {
+    color: #00ffcc;
+    margin-right: 15px;
+    width: 20px;
+    text-align: center;
+}
+
+.info strong {
+    color: #fff;
+    margin-right: 5px;
+}
+
+/* ===== EXTRA TEXT ===== */
+.extra {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #888;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+/* ===== SOCIAL LINKS ===== */
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    width: 55px;
+    height: 55px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    background: #2c2c2c;
+    border: 1px solid #333;
+}
+
+.social-links a:hover {
+    background: #1877f2; /* FB Blue on hover */
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(24, 119, 242, 0.6);
+    border-color: #1877f2;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    margin-top: 25px;
+    font-size: 11px;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 360px) {
+    .profile-card {
+        padding: 25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="profile-card">
+    <img src="https://scontent.fceb6-4.fna.fbcdn.net/v/t39.30808-1/524812303_1816211712297123_7655306096743280786_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeHaB3gPQRejJTXGV7fZJePNCHAWmLRbnRYIcBaYtFudFrFh0E2pPkARVmYSdIsdyPBnZPjB_WZM_eJi-mIuqsly&_nc_ohc=2CVrQjbjtD4Q7kNvwEsHT5t&_nc_oc=AdmjC7clOkv_XHBLV30DNNpTPSTNJQ5LmNeaAq2HjCGFll0tmMqtzpBeEmyLm3XYMk4&_nc_zt=24&_nc_ht=scontent.fceb6-4.fna&_nc_gid=q6eutQsnIISjKLgJCVuC6w&oh=00_AfoLrs8ozcrdZHCiMkZO-nnaWk-Ko8gBf2GfiGxa-5-eCw&oe=696FF99A" alt="Jay Marc Ico">
+
+    <h1>Harold Jake Patindol</h1>
+    <div class="title">BS Information Technology</div>
+
+    <div class="bio">
+        IT student specializing in Full Stack Web Development and Network Administration. Building the future, one line of code at a time.
+    </div>
+
+    <div class="info">
+        <p><i class="fas fa-graduation-cap"></i> <strong>Course:</strong> BS Information Technology</p>
+        <p><i class="fas fa-code"></i> <strong>Stack:</strong> HTML, CSS, JS, PHP, SQL</p>
+        <p><i class="fas fa-terminal"></i> <strong>Focus:</strong> SysAdmin & Cisco Networking</p>
+        <p><i class="fas fa-gamepad"></i> <strong>Hobbies:</strong> coding, Tech, Gaming, </p>
+    </div>
+
+    <div class="extra">
+        "Aspiring IT Professional aiming to leverage technology to solve complex problems and optimize system performance."
+    </div>
+
+    <div class="social-links">
+        <a href="https://www.facebook.com/share/18GfztTU4N/" target="_blank" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+    </div>
+ <div class="social-links">
+        <a href="https://www.instagram.com/vibew.kyej?igsh=eWZyNTQ3aDRhaGg4
+ target="_blank" title="Instagram">
+            <i class="inst ins-instagram-i"></i>
+        </a>
+    </div>
+
+    <div class="footer">
+        © 2026 Harold Jake Patindol
+    </div>
+</div>
+
+</body>
+</html>
